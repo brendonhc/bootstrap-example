@@ -14,8 +14,78 @@
   </head>
 
   <body>
-    <h1>Olá Mundo!</h1>
-    <h2>Esse é um projeto Bootstrap</h2>
+
+    <!-- Barra de navegação que contém os itens do menu do meu site -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <!-- class container mantém o conteúdo do site alinhado dentro do nav -->
+      <div class="container">
+
+
+        <a class="navbar-brand h1 mb-0" href="#">Dossiê</a>
+
+        <!-- Botão que aparece em telas menores para mostrar as demais opções contidas no navbar-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Demais opções contidas no navbar -->
+        <div class="collapse navbar-collapse" id="navbarSite">
+
+          <!-- Lista alinhada a direita (mr-auto margin right)-->
+          <ul class="navbar-nav mr-auto">
+
+            <!-- Menu convencional -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+
+          </ul>
+
+          <!-- Lista nalinhada a esquerda (ml-auto margin left) -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                Social
+              </a>
+              <!-- Seus sub-itens -->
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Twitter</a>
+                <a class="dropdown-item" href="#">Instagram</a>
+                <a class="dropdown-item" href="#">GitHub</a>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <!-- Barra de busca com um formulário -->
+          <form class="form-inline">
+            <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+            <button class="btn btn-default" type="Submit">Ok</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </nav>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
