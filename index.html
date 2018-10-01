@@ -104,24 +104,24 @@
         <div class="carousel-item active">
           <img src="images/slide-01.jpg" class="img-fluid d-block ml-auto mr-auto">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Essa é a imagem 1</h3>
-            <p>Aqui contém alguma descrição a respeito da imagem 1</p>
+            <h1>Essa é a imagem 1</h1>
+            <p class="lead">Aqui contém alguma descrição a respeito da imagem 1</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <img src="images/slide-02.jpg" class="img-fluid d-block ml-auto mr-auto">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Essa é a imagem 2</h3>
-            <p>Aqui contém alguma descrição a respeito da imagem 2</p>
+            <h1>Essa é a imagem 2</h1>
+            <p class="lead">Aqui contém alguma descrição a respeito da imagem 2</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <img src="images/slide-03.jpg" class="img-fluid d-block ml-auto mr-auto">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Essa é a imagem 3</h3>
-            <p>Aqui contém alguma descrição a respeito da imagem 3</p>
+            <h1>Essa é a imagem 3</h1>
+            <p class="lead">Aqui contém alguma descrição a respeito da imagem 3</p>
           </div>
         </div>
 
@@ -138,6 +138,78 @@
         <span class="carousel-control-next-icon"></span>
         <span class="sr-only">Próximo</span>
       </a>
+
+    </div>
+
+    <!-- Esse container contém (na segunda linha "row") o "Scrollspy" que é como
+        um índice inteligente para o site, aquele que acompanha a navegação do usuário
+        conforme vai descendo a página e mudando de sessão. Podendo por ele voltar
+        em diferentes pontos na mesma página -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 text-center my-5">
+
+          <h1 class="display-3">Seja bem vindo</h1>
+          <p>
+            Aqui vai algum textinho de boas vindas do site, e umas informações
+            interessantes.
+          </p>
+
+        </div>
+
+        <div class="row">
+
+          <!-- Coluna com os índices do texto do Scrollspy -->
+          <div class="col-12">
+
+            <!-- Esse nav representa o indice inteligente -->
+            <nav id="navbarVertical" class="navbar navbar-light bg-light">
+
+              <!-- Itens -->
+              <nav class="nav nav-pills flex-column">
+
+                <a class="nav-link" href="#item1">Item 1</a>
+
+                <!-- Sub-Itens -->
+                <nav class="nav nav-pills flex-column">
+
+                  <a class="nav-link ml-3" href="#item1-1">Item 1-1</a>
+
+                  <a class="nav-link ml-3" href="#item1-2">Item 1-2</a>
+
+                </nav>
+
+                <a class="nav-link" href="#item2">Item 2</a>
+
+                <a class="nav-link" href="#item3">Item 3</a>
+
+                <!-- Sub-Itens -->
+                <nav class="nav nav-pills flex-column">
+
+                  <a class="nav-link ml-3" href="#item3-1">Item 3-1</a>
+
+                  <a class="nav-link ml-3" href="#item3-2">Item 3-2</a>
+
+                  <a class="nav-link ml-3" href="#item3-3">Item 3-3</a>
+
+                </nav>
+
+              </nav>
+
+            </nav>
+
+          </div>
+
+          <!-- Coluna com o texto dos índices do Scrollspy -->
+          <div class="col-20">
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
