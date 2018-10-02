@@ -20,7 +20,7 @@
   <body>
 
     <!-- Barra de navegação que contém os itens do menu do meu site -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 
       <!-- class container mantém o conteúdo do site alinhado dentro do nav -->
       <div class="container">
@@ -40,19 +40,19 @@
 
             <!-- Menu convencional -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Início</a>
+              <a class="nav-link text-white" href="#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Perfil</a>
+              <a class="nav-link text-white" href="#">Perfil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link text-white" href="#">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Depoimentos</a>
+              <a class="nav-link text-white" href="#">Depoimentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
+              <a class="nav-link text-white" href="#">Contatos</a>
             </li>
 
           </ul>
@@ -281,8 +281,8 @@
 
     </div>
 
-    <!-- Formulário Responsivo -->
-    <div class="container">
+    <!-- Container do Formulário Responsivo -->
+    <div class="container mx-auto">
 
       <div class="row">
 
@@ -292,46 +292,60 @@
 
         </div>
 
-        <div class="row justify-content-center mb-5">
-
-          <div class="col-sm-12 col-md-10 col-lg-8"> <!-- Garantem responsividade dependendo do tamanho da tela -->
-
-            <form>
-
-              <div class="form-row">
-
-                <div class="form-group col-sm-6">
-
-                  <label for="inputNome">Seu nome</label>
-                  <input type="text" class="form-control" id="inputNome" placeholder="Nome" />
-
-                </div>
-
-                <div class="form-group col-sm-6">
-
-                  <label for="inputSobrenome">Seu sobrenome</label>
-                  <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome" />
-
-                </div>
-
-                <div class="form-group">
-
-                  <label for="inputEndereco">Seu endereço</label>
-                  <input type="text" class="form-control" id="inputEndereco" placeholder="Endereço" />"
-
-                </div>
-
-              </div>
-
-            </form>
-
-          </div>
-
-        </div>
-
       </div>
 
-    </div>
+      <!-- Formulário Rersponsivo -->
+      <div class="row mx-auto">
+        <form class="col-12">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputSenha">Senha</label>
+              <input type="senha" class="form-control" id="inputSenha" placeholder="Senha">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEndereço">Endereço</label>
+            <input type="text" class="form-control" id="inputEndereço" placeholder="Avenida São Carlos, número 17">
+          </div>
+          <div class="form-group">
+            <label for="inputEndereço2">Endereço 2</label>
+            <input type="text" class="form-control" id="inputEndereço2" placeholder="Apartamento, estúdio, piso, loja">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCidade">Cidade</label>
+              <input type="text" class="form-control" id="inputCidade">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputEstado">Estado</label>
+              <select id="inputEstado" class="form-control">
+                <option selected>Escolha...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputCEP">CEP</label>
+              <input type="text" class="form-control" id="inputCEP">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Confirmo todas as informações
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+      </div> <!-- Fim do formulário responsivo -->
+
+    </div> <!-- Fim do container para o formulário -->
 
 
     <!-- Optional JavaScript -->
