@@ -359,7 +359,10 @@
     <!-- Tab JavaScript plugin - Para informações locais na aba-->
     <div class="row justify-content-center mb-5 mt-5 ml-5 mr-5">
       <!-- Caneçalho -->
-      <ul class="nav nav-tabs " id="myTab" role="tablist">
+      <ul class="nav nav-tabs col-12 mb-2 justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" id="tab-with-table" data-toggle="tab" href="#content-tab-with-table" role="tab" aria-controls="content-tab-with-table" aria-selected="true">Tabela</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" id="tab-1" data-toggle="tab" href="#content-tab-1" role="tab" aria-controls="content-tab-1" aria-selected="true">Primeira</a>
         </li>
@@ -381,6 +384,38 @@
       </ul>
       <!-- Conteúdo -->
       <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="content-tab-with-table" role="tabpanel" aria-labelledby="tab-with-table">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div class="tab-pane fade show active" id="content-tab-1" role="tabpanel" aria-labelledby="tab-1">
           <h2>Fio appetite seccaram dizermeu uns palavras dissesse padremas</h2>
 
@@ -394,6 +429,7 @@
 
           <p>Suppor tua parece docura mau admira. Pe suisso ha desses na fiando ou guiara. Retirar realise materna cintura officio ceo aza. Es minh traz jura em fita hoje fiel. Obrigacao soffresse ira arruinado mas paevolveu. Escriptora sobresalto ir recolhendo acontecera da so si. Ao tu um contrariar nobilitado de desconfias commissoes padredisse indignacao. Enfraquece hesitacoes sua considerar luz ias interrompe tabaqueiro vae preoccupar.</p>
         </div>
+
         <div class="tab-pane fade" id="content-tab-2" role="tabpanel" aria-labelledby="tab-2">
           <h2>Irma essa la mude util diga fito lh</h2>
 
@@ -405,6 +441,7 @@
 
           <p>Mal escutava promette situacao sem censurar cre empresta pau. Lugubre sua sob pessoas medonho enormes. Ler brio leva sou fora seio cuja pelo. Entrada eu terreno em despiam na os reposto theoria mandava. Diz acho mas tudo faze sobr crer semi. Notou lavar seras mo vivem sr porto conta. Principiou la no ao es representa resfolegar. Avante usando gottas tracos as os de no.</p>
         </div>
+
         <div class="tab-pane fade" id="content-tab-3" role="tabpanel" aria-labelledby="tab-3">
           <h2>Teremos sem fazerem vae occulto</h2>
 
@@ -416,6 +453,7 @@
 
           <p>Outros ca do da as altura crueis entrar gostam. Mude arte como pao meio uma amam ide. Fiz fui punhalada mau tao affeicoes asseveras dolorosas. Appellidos finalmente postaspelo apparencia nao considerou sou. Eras guia nova para eu mo ha viva. Porventura remediados ahi primitivas bem sacrificio hei vil associacao. Chama ca havia de ii preco juras haver ar. Contrario afigurava so perturbar aproximar ah viveremos se desastres. Peco pe face so voce jura alas.</p>
         </div>
+
         <div class="tab-pane fade" id="content-tab-4" role="tabpanel" aria-labelledby="tab-4">
           <h2>Fio appetite seccaram dizermeu uns palavras dissesse padremas</h2>
 
@@ -429,6 +467,7 @@
 
           <p>Suppor tua parece docura mau admira. Pe suisso ha desses na fiando ou guiara. Retirar realise materna cintura officio ceo aza. Es minh traz jura em fita hoje fiel. Obrigacao soffresse ira arruinado mas paevolveu. Escriptora sobresalto ir recolhendo acontecera da so si. Ao tu um contrariar nobilitado de desconfias commissoes padredisse indignacao. Enfraquece hesitacoes sua considerar luz ias interrompe tabaqueiro vae preoccupar.</p>
         </div>
+
         <div class="tab-pane fade" id="content-tab-5" role="tabpanel" aria-labelledby="tab-5">
           <h2>Irma essa la mude util diga fito lh</h2>
 
@@ -440,6 +479,7 @@
 
           <p>Mal escutava promette situacao sem censurar cre empresta pau. Lugubre sua sob pessoas medonho enormes. Ler brio leva sou fora seio cuja pelo. Entrada eu terreno em despiam na os reposto theoria mandava. Diz acho mas tudo faze sobr crer semi. Notou lavar seras mo vivem sr porto conta. Principiou la no ao es representa resfolegar. Avante usando gottas tracos as os de no.</p>
         </div>
+
         <div class="tab-pane fade" id="content-tab-6" role="tabpanel" aria-labelledby="tab-6">
           <h2>Teremos sem fazerem vae occulto</h2>
 
@@ -451,6 +491,7 @@
 
           <p>Outros ca do da as altura crueis entrar gostam. Mude arte como pao meio uma amam ide. Fiz fui punhalada mau tao affeicoes asseveras dolorosas. Appellidos finalmente postaspelo apparencia nao considerou sou. Eras guia nova para eu mo ha viva. Porventura remediados ahi primitivas bem sacrificio hei vil associacao. Chama ca havia de ii preco juras haver ar. Contrario afigurava so perturbar aproximar ah viveremos se desastres. Peco pe face so voce jura alas.</p>
         </div>
+
       </div>
 
     </div> <!-- row das tabs -->
