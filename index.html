@@ -383,15 +383,23 @@
         </li>
       </ul>
       <!-- Conteúdo -->
-      <div class="tab-content" id="myTabContent">
+      <!-- Na div que contém a tabela, para garantir sua responsividade nas mais variadas dimensões de telas essas classes 'table-responsive-' se fazem necessárias-->
+      <div class="tab-content table-responsive-sm table-responsive-md table-responsive-lg" id="myTabContent">
         <div class="tab-pane fade" id="content-tab-with-table" role="tabpanel" aria-labelledby="tab-with-table">
+
           <table class="table table-bordered">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Um</th>
+                <th scope="col">Dois</th>
+                <th scope="col">Três</th>
+                <th scope="col">Quatro</th>
+                <th scope="col">Cinco</th>
+                <th scope="col">Seis</th>
+                <th scope="col">Sete</th>
+                <th scope="col">Oito</th>
+                <th scope="col">Nove</th>
               </tr>
             </thead>
             <tbody>
@@ -400,16 +408,22 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
-                <td>@fat</td>
+                <td colspan="7">@fat</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
+                <td colspan="8">Larry the Bird</td>
                 <td>@twitter</td>
               </tr>
             </tbody>
